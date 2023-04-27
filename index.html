@@ -1,0 +1,81 @@
+<!-- Simple calculator -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="icon" href="images/favicon (2).ico">
+    <!--Favicon help to show icon of website in tab -->
+    <link rel="stylesheet" href="style.css"> <!-- Link css file -->
+    <link rel="stylesheet" href="utils.css">
+    <link rel="stylesheet" href="media.css">
+    <!--utils css file-->
+</head>
+<!-- Main code Start from here-->
+
+<body>
+    <div class="container">
+        <!-- Make a container -->
+        <h1>Welcome to Calculate Me.<br>
+        </h1>
+        <div class="calculator">
+            <!--Make a div class and in div class i have make a form tag-->
+            <form>
+                <div class="display">
+                    <!-- Display means all the number and sign will display on white screen-->
+                    <input type="text" name="display" placeholder="0">
+
+                </div>
+                <div>
+                    <!-- Make all the button using input tag and Js how its work-->
+                    <input type="button" value="AC" onclick="display.value = '' ">
+                    <!--AC means all clear and in one click value is empty-->
+                    <input type="button" value="Del" onclick="display.value = display.value.toString().slice(0,-1)">
+                    <!--Del that delete one number using slice method-->
+                    <input type="button" value="." onclick="display.value += '.' ">
+                    <input type="button" value="&#247;" onclick="display.value += '/' ">
+                </div>
+                <div>
+                    <input type="button" value="7"onclick="display.value += '7' ">
+                    <input type="button" value="8" onclick="display.value += '8' ">
+                    <input type="button" value="9" onclick="display.value += '9' ">
+                    <input type="button" value="X" onclick="display.value += '*' ">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="display.value += '4' ">
+                    <input type="button" value="5" onclick="display.value += '5' ">
+                    <input type="button" value="6" onclick="display.value += '6' ">
+                    <input type="button" value="-" onclick="display.value += '-' ">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="display.value += '1' ">
+                    <input type="button" value="2" onclick="display.value += '2' ">
+                    <input type="button" value="3" onclick="display.value += '3' ">
+                    <input type="button" value="+" onclick="display.value += '+' ">
+                </div>
+                <div>
+                    <input type="button" value="00" onclick="display.value += '00' ">
+                    <input type="button" value="0" onclick="display.value += '0' ">
+                    <input type="button" value="=" onkeypress="display.value = eval(display.value)"
+                        onclick="display.value = eval(display.value)" class="equal">
+
+                    <!-- equal (=) will give the final result and eval means to add the value and showing on display by the help of operators that multi,add,sub & divide . -->
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--Footer-->
+
+    <div class="footer">
+        <h2>Made By :- Parth Agnihotri</h2>
+    </div>
+</body>
+
+</html>
+
+<!-- This is my First project on Javascript i have done this project alone i have take some help from 
+youtube,w3school websites -->

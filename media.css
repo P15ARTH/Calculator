@@ -1,0 +1,34 @@
+@media only screen and (max-width:600px) {
+    .container {
+      height: auto;
+    }
+  }
+  
+  @media only screen and (max-width:600px) {
+    .footer {
+      margin-top: 3px;
+      padding: 20px;
+      background-color: #3a4452;
+      color: white;
+      display: flex;
+    }
+  }
+  
+  
+  @media only screen and (max-width:600px) {
+    .calculator {
+      display: flex;
+      flex-wrap: wrap;
+      height: auto;
+  
+    }
+  }
+  
+  @media only screen and(max-width:600px) {
+    h1 {
+      font-size: 30px;
+      margin: 0;
+      padding: 30px;
+      display: block;
+    }
+  }
